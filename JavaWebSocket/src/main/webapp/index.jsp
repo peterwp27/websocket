@@ -15,7 +15,7 @@
 
 <script type="text/javascript">
     var websocket = null;
-    //判断当前浏览器是否支持WebSocket
+    //判断当前浏览器是否支持WebSocket;@wang是发送的参数,可以让服务端标识当前连接用户
     if ('WebSocket' in window) {
         websocket = new WebSocket("ws://localhost:8080/websocket/websocket/wang");
     }
